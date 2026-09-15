@@ -1,0 +1,39 @@
+.env
+.env.local
+.env.*
+
+# Python virtual environment
+.venv/
+venv/
+env/
+
+# Python bytecode / caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Local credentials and sensitive files
+credentials/*.json
+credentials/
+
+# Generated reports / local outputs
+*.xlsx
+*.csv
+reporte_cve_*
+
+# Local documents / artifacts not meant to be committed
+*.docx
+*.pdf
+*.pptx
+*.bak
+*.tmp
+
+# OS/editor artifacts
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Logs
+*.log
