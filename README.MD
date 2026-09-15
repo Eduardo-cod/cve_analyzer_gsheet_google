@@ -1,4 +1,4 @@
-# CVE Analyzer GSheet — CrowdStrike + Google Sheets + Gemini
+# CVE Analyzer GSheet — CrowdStrike + Google Sheets
 Interfaz técnica para análisis automatizado de vulnerabilidades en activos gestionados mediante CrowdStrike Falcon Spotlight, con integración directa a Google Sheets y análisis opcional con Gemini.
 
 ---
@@ -9,7 +9,7 @@ CVE Analyzer GSheet es una herramienta diseñada para automatizar la validación
 ---
 
 ## 🧩 Arquitectura del sistema
-/cve_analyzer_gsheet_google.py   # Backend: CrowdStrike + Gemini
+/cve_analyzer_gsheet_google.py   # Backend: CrowdStrike
 /ui_cve_analyzer_gsheet.py       # Interfaz gráfica PySide6
 .env                             # Variables de entorno
 README.md
@@ -18,7 +18,6 @@ README.md
 - Autenticación OAuth2 con CrowdStrike.
 - Consulta de Spotlight Vulnerabilities.
 - Normalización de resultados.
-- Integración opcional con Gemini para análisis técnico.
 
 ### Interfaz (ui_cve_analyzer_gsheet.py)
 - Lectura de Google Sheets mediante Service Account.
@@ -52,10 +51,6 @@ README.md
   - Analizar fila seleccionada
   - Analizar todas las filas
   - Actualizar Google Sheets
-
-### ✔ Integración opcional con Gemini
-- Generación de análisis técnico del CVE.
-- Resultados mostrados en la interfaz (no escritos en la hoja).
 
 ---
 
